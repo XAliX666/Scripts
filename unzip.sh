@@ -25,7 +25,7 @@ fi
 #archive format
 case $1 in 
 *.bz2) bunzip2 $1;;
-*•gz) gunzip $1 ;;
+*.gz) gunzip $1 ;;
 *.zip) unzip $1;;
 *.lzma) unlzma $1;;
 *) echo "Archive format was is not in script!"
