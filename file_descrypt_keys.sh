@@ -19,5 +19,5 @@ then
     echo "Second arguments not is key"
     exit 1
 fi
-
+#Decrypt file.txt with privat.key
 openssl rsautl -decrypt -inkey $2 -in $1  -out "$1"decrypt.new
