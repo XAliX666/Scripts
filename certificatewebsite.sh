@@ -3,6 +3,7 @@
 read -r -p "IP host: " iphost
 read -r -p "Name host: " namehost
 read -r  -s -p  "Enter password for sudo: " passwd
+<<<<<<< HEAD
 #Добавляем ip и hostname в /etc/hosts
 echo $passwd | sudo -S chmod g+w /etc/hosts
 echo $passwd | sudo -S  echo "$iphost  $namehost" >> /etc/hosts 
@@ -39,3 +40,9 @@ echo $passwd | sudo -S echo "ssl_certificate_key /etc/nginx/ssl/server.key" >>  
 #Change server_name on server_name ourwebsite
 ааук
 echo $passwd | sudo -S chmod g-w /etc/nginx/sites-available/default
+=======
+
+echo $passwd | sudo -S chmod g+w /etc/hosts
+echo $passwd | sudo -S  echo "$iphost  $namehost" >> /etc/hosts 
+echo $passwd | sudo -S chmod g-w /etc/hosts
+>>>>>>> refs/remotes/origin/main
